@@ -1,3 +1,3 @@
 
 import './shim';
-export {default as Workspace} from './workspace';
+export {default as WorkspaceManager} from './workspace';
