@@ -1,7 +1,7 @@
 SystemJS.config({
   packages: {
     "alkindi-task-lib": {
-      "main": "index.js",
+      "main": "index",
       "format": "esm",
       "defaultExtension": "js"
     }
@@ -21,13 +21,15 @@ SystemJS.config({
   browserConfig: {
     "paths": {
       "npm:": "/jspm_packages/npm/",
-      "alkindi-task-lib/": "/dist/"
+      "local:": "/jspm_packages/local/",
+      "alkindi-task-lib/": "/src/"
     }
   },
   nodeConfig: {
     "paths": {
       "npm:": "jspm_packages/npm/",
-      "alkindi-task-lib/": "dist/"
+      "local:": "jspm_packages/local/",
+      "alkindi-task-lib/": "src/"
     }
   },
   devConfig: {
@@ -151,9 +153,11 @@ SystemJS.config({
 SystemJS.config({
   packageConfigPaths: [
     "npm:@*/*.json",
-    "npm:*.json"
+    "npm:*.json",
+    "local:*.json"
   ],
   map: {
+    "alkindi-task-lib": "local:alkindi-task-lib@1.0.0",
     "array.prototype.fill": "npm:array.prototype.fill@1.0.1",
     "assert": "npm:jspm-nodelibs-assert@0.2.0",
     "babel-runtime": "npm:babel-runtime@6.20.0",
@@ -592,6 +596,22 @@ SystemJS.config({
         "bn.js": "npm:bn.js@4.11.6",
         "inherits": "npm:inherits@2.0.3",
         "minimalistic-assert": "npm:minimalistic-assert@1.0.0"
+      }
+    },
+    "local:alkindi-task-lib@1.0.0": {
+      "map": {
+        "classnames": "npm:classnames@2.2.5",
+        "babel-runtime": "npm:babel-runtime@6.20.0",
+        "epic-component": "npm:epic-component@0.3.1",
+        "es5-sham-ie8": "npm:es5-sham-ie8@1.0.1",
+        "es6-promise": "npm:es6-promise@4.0.5",
+        "epic-linker": "npm:epic-linker@1.0.6",
+        "rc-tooltip": "npm:rc-tooltip@3.4.2",
+        "object.assign": "npm:object.assign@4.0.4",
+        "es6-shim": "npm:es6-shim@0.35.2",
+        "array.prototype.fill": "npm:array.prototype.fill@1.0.1",
+        "html5shiv": "npm:html5shiv@3.7.3",
+        "es5-shim": "npm:es5-shim@4.5.9"
       }
     }
   }
