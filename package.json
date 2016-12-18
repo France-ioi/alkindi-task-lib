@@ -6,7 +6,8 @@
     "Sebastien Carlier <s.carlier@epixode.fr>"
   ],
   "scripts": {
-    "build": "babel lib --out-dir dist"
+    "build": "babel lib --out-dir dist",
+    "build-dev": "babel --watch lib --out-dir dist"
   },
   "dependencies": {},
   "devDependencies": {
