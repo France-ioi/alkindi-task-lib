@@ -6,7 +6,7 @@ Support library used in tasks for the Alkindi competition.
 Add this library as a dependency of a task package:
 
 ```
-jspm install github:France-ioi/alkindi-task-lib
+jspm install alkindi-task-lib=github:France-ioi/alkindi-task-lib
 ```
 
 ### Development
