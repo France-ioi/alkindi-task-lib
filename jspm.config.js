@@ -1,7 +1,17 @@
 SystemJS.config({
+  paths: {
+    "alkindi-task-lib/": "lib/"
+  },
+  browserConfig: {
+    "paths": {
+      "github:": "/jspm_packages/github/",
+      "npm:": "/jspm_packages/npm/"
+    }
+  },
   nodeConfig: {
     "paths": {
-      "alkindi-task-lib/": "lib/"
+      "npm:": "jspm_packages/npm/",
+      "github:": "jspm_packages/github/"
     }
   },
   devConfig: {
@@ -60,7 +70,8 @@ SystemJS.config({
 SystemJS.config({
   packageConfigPaths: [
     "npm:@*/*.json",
-    "npm:*.json"
+    "npm:*.json",
+    "github:*/*.json"
   ],
   map: {
     "array.prototype.fill": "npm:array.prototype.fill@1.0.1",
