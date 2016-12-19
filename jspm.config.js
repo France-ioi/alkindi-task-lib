@@ -74,7 +74,7 @@ SystemJS.config({
     "github:*/*.json"
   ],
   map: {
-    "array.prototype.fill": "npm:array.prototype.fill@1.0.1",
+    "array.prototype.fill": "npm:array.prototype.fill@1.0.2",
     "assert": "npm:jspm-nodelibs-assert@0.2.0",
     "babel-runtime": "npm:babel-runtime@6.20.0",
     "buffer": "npm:jspm-nodelibs-buffer@0.2.1",
