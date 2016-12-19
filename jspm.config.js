@@ -101,7 +101,9 @@ SystemJS.config({
     "rc-tooltip": "npm:rc-tooltip@3.4.2",
     "react": "npm:react@15.4.1",
     "react-dnd": "npm:react-dnd@2.1.4",
+    "react-dnd-html5-backend": "npm:react-dnd-html5-backend@2.1.2",
     "react-dom": "npm:react-dom@15.4.1",
+    "react-redux": "npm:react-redux@5.0.1",
     "redux": "npm:redux@3.6.0",
     "redux-saga": "npm:redux-saga@0.12.1",
     "stream": "npm:jspm-nodelibs-stream@0.2.0",
@@ -512,6 +514,20 @@ SystemJS.config({
         "bn.js": "npm:bn.js@4.11.6",
         "inherits": "npm:inherits@2.0.3",
         "minimalistic-assert": "npm:minimalistic-assert@1.0.0"
+      }
+    },
+    "npm:react-redux@5.0.1": {
+      "map": {
+        "loose-envify": "npm:loose-envify@1.3.0",
+        "hoist-non-react-statics": "npm:hoist-non-react-statics@1.2.0",
+        "lodash-es": "npm:lodash-es@4.17.2",
+        "invariant": "npm:invariant@2.2.2",
+        "lodash": "npm:lodash@4.17.2"
+      }
+    },
+    "npm:react-dnd-html5-backend@2.1.2": {
+      "map": {
+        "lodash": "npm:lodash@4.17.2"
       }
     }
   }
