@@ -94,5 +94,14 @@
     "babel-preset-es2015": "^6.18.0",
     "babel-preset-react": "^6.16.0",
     "babel-runtime": "^6.20.0"
-  }
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/France-ioi/alkindi-task-lib.git"
+  },
+  "bugs": {
+    "url": "https://github.com/France-ioi/alkindi-task-lib/issues"
+  },
+  "homepage": "https://github.com/France-ioi/alkindi-task-lib#readme"
 }
