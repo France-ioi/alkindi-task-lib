@@ -5,84 +5,94 @@
   "authors": [
     "Sebastien Carlier <s.carlier@epixode.fr>"
   ],
-  "registry": "jspm",
-  "format": "esm",
-  "main": "index.js",
-  "directories": {
-    "lib": "lib"
+  "build": "babel --minified --out-dir dist lib",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel --out-dir dist lib",
+    "watch": "babel --watch --out-dir dist lib"
   },
-  "map": {
-    "./ui": "./ui/index.js",
-    "./workspace": "./workspace.js"
-  },
-  "dependencies": {
-    "array.prototype.fill": "npm:array.prototype.fill@^1.0.2",
-    "babel-runtime": "npm:babel-runtime@^6.20.0",
-    "classnames": "npm:classnames@^2.2.5",
-    "epic-component": "npm:epic-component@^0.3.1",
-    "epic-linker": "npm:epic-linker@^1.0.6",
-    "es5-sham-ie8": "npm:es5-sham-ie8@^1.0.1",
-    "es5-shim": "npm:es5-shim@^4.5.9",
-    "es6-promise": "npm:es6-promise@^4.0.5",
-    "es6-shim": "npm:es6-shim@^0.35.2",
-    "html5shiv": "npm:html5shiv@^3.7.3",
-    "object.assign": "npm:object.assign@^4.0.4",
-    "rc-tooltip": "npm:rc-tooltip@^3.4.2",
-    "react-dnd-html5-backend": "npm:react-dnd-html5-backend@^2.1.2",
-    "react-redux": "npm:react-redux@^5.0.1"
-  },
-  "devDependencies": {
-    "babel-plugin-transform-object-rest-spread": "npm:babel-plugin-transform-object-rest-spread@^6.20.2",
-    "babel-plugin-transform-react-jsx": "npm:babel-plugin-transform-react-jsx@^6.8.0",
-    "babel-plugin-transform-runtime": "npm:babel-plugin-transform-runtime@^6.15.0",
-    "systemjs-plugin-babel": "npm:systemjs-plugin-babel@^0.0.17"
-  },
-  "peerDependencies": {
-    "assert": "npm:jspm-nodelibs-assert@^0.2.0",
-    "buffer": "npm:jspm-nodelibs-buffer@^0.2.0",
-    "child_process": "npm:jspm-nodelibs-child_process@^0.2.0",
-    "constants": "npm:jspm-nodelibs-constants@^0.2.0",
-    "crypto": "npm:jspm-nodelibs-crypto@^0.2.0",
-    "domain": "npm:jspm-nodelibs-domain@^0.2.0",
-    "events": "npm:jspm-nodelibs-events@^0.2.0",
-    "fs": "npm:jspm-nodelibs-fs@^0.2.0",
-    "http": "npm:jspm-nodelibs-http@^0.2.0",
-    "https": "npm:jspm-nodelibs-https@^0.2.0",
-    "os": "npm:jspm-nodelibs-os@^0.2.0",
-    "path": "npm:jspm-nodelibs-path@^0.2.0",
-    "process": "npm:jspm-nodelibs-process@^0.2.0",
-    "react": "npm:react@^15.4.1",
-    "react-dnd": "npm:react-dnd@^2.1.4",
-    "react-dom": "npm:react-dom@^15.4.1",
-    "redux": "npm:redux@^3.6.0",
-    "redux-saga": "npm:redux-saga@^0.12.1",
-    "stream": "npm:jspm-nodelibs-stream@^0.2.0",
-    "string_decoder": "npm:jspm-nodelibs-string_decoder@^0.2.0",
-    "url": "npm:jspm-nodelibs-url@^0.2.0",
-    "util": "npm:jspm-nodelibs-util@^0.2.0",
-    "vm": "npm:jspm-nodelibs-vm@^0.2.0",
-    "zlib": "npm:jspm-nodelibs-zlib@^0.2.0"
-  },
-  "overrides": {
-    "npm:browserify-zlib@0.1.4": {
-      "dependencies": {
-        "readable-stream": "^2.0.2",
-        "pako": "~0.2.0"
+  "jspm": {
+    "format": "cjs",
+    "main": "index.js",
+    "directories": {
+      "lib": "dist"
+    },
+    "map": {
+      "./ui": "./ui/index.js",
+      "./workspace": "./workspace.js"
+    },
+    "dependencies": {
+      "array.prototype.fill": "npm:array.prototype.fill@^1.0.2",
+      "babel-runtime": "npm:babel-runtime@^6.20.0",
+      "classnames": "npm:classnames@^2.2.5",
+      "epic-component": "npm:epic-component@^0.3.1",
+      "epic-linker": "npm:epic-linker@^1.0.6",
+      "es5-sham-ie8": "npm:es5-sham-ie8@^1.0.1",
+      "es5-shim": "npm:es5-shim@^4.5.9",
+      "es6-promise": "npm:es6-promise@^4.0.5",
+      "es6-shim": "npm:es6-shim@^0.35.2",
+      "html5shiv": "npm:html5shiv@^3.7.3",
+      "object.assign": "npm:object.assign@^4.0.4",
+      "rc-tooltip": "npm:rc-tooltip@^3.4.2",
+      "react-dnd-html5-backend": "npm:react-dnd-html5-backend@^2.1.2",
+      "react-redux": "npm:react-redux@^5.0.1"
+    },
+    "devDependencies": {},
+    "peerDependencies": {
+      "assert": "npm:jspm-nodelibs-assert@^0.2.0",
+      "buffer": "npm:jspm-nodelibs-buffer@^0.2.0",
+      "child_process": "npm:jspm-nodelibs-child_process@^0.2.0",
+      "constants": "npm:jspm-nodelibs-constants@^0.2.0",
+      "crypto": "npm:jspm-nodelibs-crypto@^0.2.0",
+      "domain": "npm:jspm-nodelibs-domain@^0.2.0",
+      "events": "npm:jspm-nodelibs-events@^0.2.0",
+      "fs": "npm:jspm-nodelibs-fs@^0.2.0",
+      "http": "npm:jspm-nodelibs-http@^0.2.0",
+      "https": "npm:jspm-nodelibs-https@^0.2.0",
+      "os": "npm:jspm-nodelibs-os@^0.2.0",
+      "path": "npm:jspm-nodelibs-path@^0.2.0",
+      "process": "npm:jspm-nodelibs-process@^0.2.0",
+      "react": "npm:react@^15.4.1",
+      "react-dnd": "npm:react-dnd@^2.1.4",
+      "react-dom": "npm:react-dom@^15.4.1",
+      "redux": "npm:redux@^3.6.0",
+      "redux-saga": "npm:redux-saga@^0.12.1",
+      "stream": "npm:jspm-nodelibs-stream@^0.2.0",
+      "string_decoder": "npm:jspm-nodelibs-string_decoder@^0.2.0",
+      "url": "npm:jspm-nodelibs-url@^0.2.0",
+      "util": "npm:jspm-nodelibs-util@^0.2.0",
+      "vm": "npm:jspm-nodelibs-vm@^0.2.0",
+      "zlib": "npm:jspm-nodelibs-zlib@^0.2.0"
+    },
+    "overrides": {
+      "npm:browserify-zlib@0.1.4": {
+        "dependencies": {
+          "readable-stream": "^2.0.2",
+          "pako": "~0.2.0"
+        },
+        "map": {
+          "_stream_transform": "readable-stream/transform"
+        }
       },
-      "map": {
-        "_stream_transform": "readable-stream/transform"
-      }
-    },
-    "npm:inherits@2.0.3": {
-      "ignore": [
-        "test.js"
-      ]
-    },
-    "npm:lodash@4.17.2": {
-      "map": {
-        "buffer": "@empty",
-        "process": "@empty"
+      "npm:inherits@2.0.3": {
+        "ignore": [
+          "test.js"
+        ]
+      },
+      "npm:lodash@4.17.2": {
+        "map": {
+          "buffer": "@empty",
+          "process": "@empty"
+        }
       }
     }
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-plugin-transform-object-rest-spread": "^6.20.2",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-runtime": "^6.20.0"
   }
 }

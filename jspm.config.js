@@ -1,6 +1,6 @@
 SystemJS.config({
   paths: {
-    "alkindi-task-lib/": "lib/"
+    "alkindi-task-lib/": "dist/"
   },
   browserConfig: {
     "paths": {
@@ -12,50 +12,6 @@ SystemJS.config({
     "paths": {
       "npm:": "jspm_packages/npm/",
       "github:": "jspm_packages/github/"
-    }
-  },
-  devConfig: {
-    "map": {
-      "babel-plugin-transform-react-jsx": "npm:babel-plugin-transform-react-jsx@6.8.0",
-      "systemjs-plugin-babel": "npm:systemjs-plugin-babel@0.0.17",
-      "babel-plugin-transform-object-rest-spread": "npm:babel-plugin-transform-object-rest-spread@6.20.2",
-      "babel-plugin-transform-runtime": "npm:babel-plugin-transform-runtime@6.15.0"
-    },
-    "packages": {
-      "npm:babel-plugin-transform-react-jsx@6.8.0": {
-        "map": {
-          "babel-plugin-syntax-jsx": "npm:babel-plugin-syntax-jsx@6.18.0",
-          "babel-runtime": "npm:babel-runtime@6.20.0",
-          "babel-helper-builder-react-jsx": "npm:babel-helper-builder-react-jsx@6.21.1"
-        }
-      },
-      "npm:babel-helper-builder-react-jsx@6.21.1": {
-        "map": {
-          "babel-runtime": "npm:babel-runtime@6.20.0",
-          "babel-types": "npm:babel-types@6.21.0",
-          "esutils": "npm:esutils@2.0.2",
-          "lodash": "npm:lodash@4.17.2"
-        }
-      },
-      "npm:babel-types@6.21.0": {
-        "map": {
-          "babel-runtime": "npm:babel-runtime@6.20.0",
-          "esutils": "npm:esutils@2.0.2",
-          "lodash": "npm:lodash@4.17.2",
-          "to-fast-properties": "npm:to-fast-properties@1.0.2"
-        }
-      },
-      "npm:babel-plugin-transform-object-rest-spread@6.20.2": {
-        "map": {
-          "babel-runtime": "npm:babel-runtime@6.20.0",
-          "babel-plugin-syntax-object-rest-spread": "npm:babel-plugin-syntax-object-rest-spread@6.13.0"
-        }
-      },
-      "npm:babel-plugin-transform-runtime@6.15.0": {
-        "map": {
-          "babel-runtime": "npm:babel-runtime@6.20.0"
-        }
-      }
     }
   },
   transpiler: false,
