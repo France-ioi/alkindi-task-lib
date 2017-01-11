@@ -93,7 +93,7 @@ SystemJS.config({
         "promise": "npm:promise@7.1.1",
         "setimmediate": "npm:setimmediate@1.0.5",
         "isomorphic-fetch": "npm:isomorphic-fetch@2.2.1",
-        "core-js": "npm:core-js@2.4.1"
+        "core-js": "npm:core-js@1.2.7"
       }
     },
     "npm:loose-envify@1.3.0": {
