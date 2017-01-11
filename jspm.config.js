@@ -41,7 +41,7 @@ SystemJS.config({
     "constants": "npm:jspm-nodelibs-constants@0.2.0",
     "crypto": "npm:jspm-nodelibs-crypto@0.2.0",
     "domain": "npm:jspm-nodelibs-domain@0.2.0",
-    "epic-component": "npm:epic-component@1.1.1",
+    "epic-component": "npm:epic-component@1.1.2",
     "epic-linker": "npm:epic-linker@1.3.3",
     "es5-sham-ie8": "npm:es5-sham-ie8@1.0.1",
     "es5-shim": "npm:es5-shim@4.5.9",
