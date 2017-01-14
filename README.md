@@ -13,11 +13,14 @@ Clone this repository:
 git clone https://github.com/France-ioi/alkindi-task-lib.git
 ```
 
-Use scripts `build` and `watch`.
-
-Publish (and link) only the dist directory:
+Publish only the dist directory:
 
 ```
-npm publish dist
+npm run prepare && npm publish dist/
 ```
 
+Link for local development:
+
+```
+npm run prepare && (cd dist/ && npm link) && npm run watch
+```

@@ -7,11 +7,9 @@
   ],
   "main": "index.js",
   "scripts": {
-    "prepublish": "npm run prepare && npm run prepublishOnly",
-    "prepare": "npm run clean && npm run build",
+    "prepare": "npm run clean && npm run build && cp package.json dist/",
     "clean": "rimraf ./dist",
     "build": "babel --out-dir dist lib",
-    "prepublishOnly": "cp package.json dist/",
     "watch": "babel --watch --out-dir dist lib",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
