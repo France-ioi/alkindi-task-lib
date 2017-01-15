@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "array.prototype.fill": "^1.0.2",
+    "body-parser": "^1.15.2",
     "classnames": "^2.2.5",
     "colors": "^1.1.2",
     "css-loader": "^0.26.1",
