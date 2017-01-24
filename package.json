@@ -21,7 +21,8 @@
     "babel-preset-es2015": "^6.18.0",
     "babel-preset-react": "^6.16.0",
     "babel-runtime": "^6.20.0",
-    "rimraf": "^2.5.4"
+    "rimraf": "^2.5.4",
+    "superagent": "^3.3.2"
   },
   "dependencies": {
     "array.prototype.fill": "^1.0.2",
