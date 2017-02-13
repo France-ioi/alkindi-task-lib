@@ -44,7 +44,7 @@
   },
   "peerDependencies": {
     "bootstrap": "^3.3.7",
-    "epic-linker": "^3.0.0",
+    "epic-linker": "^3.1.0",
     "font-awesome": "^4.7.0",
     "react": "^15.4.2",
     "react-bootstrap": "^0.30.7",
